@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="nav-bar">
+        <ul><a href="/home">Home</a></ul>
+        <ul><a href="/newblog">New Blog</a></ul>
+        <ul><a href="/about">About</a></ul>
+    </div>
+    <h1>Latest Blogs</h1>
+    <div class="blog">
+        <% let i = 0 %>
+        <% if(blogs.length > 0) { %>
+            <% blogs.forEach(blog => { %>
+                <% if(i >=5) { return; } %>
+                <div class="blog-post">
+                    <a href="/blog/<%= blog.id %>">
+                    <h2><%= blog.title %></h2>
+                    <p><%= blog.content %></p>
+                    <p>author:-<%= blog.auth_name %></p>
+                </div>
+            </a>
+                <% i++; %>
+            <% }) %>
+        <% } else { %>
+            <p>No blogs available</p>
+        <% } %>
+    </div>
+    <hr />
+    <h1>All Blogs</h1>
+    <div class="all-blogs">
+        <% blogs.forEach(blog => { %>
+            <div class="blog-all-post">
+                <a href="/blog/<%= blog.id %>">
+                <h2><%= blog.title %></h2>
+                <p><%= blog.content %></p>
+                <p>author:-<%= blog.auth_name %></p>
+            </div>
+        </a>
+        <% }) %>
+    </div>
+    <footer style="text-align: center;">
+        <p>&copy; 2022 Bhaskar Blog Post. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body{
+    background-color: pink;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 3vh;
+}
+.nav-bar{
+    display: flex;
+    justify-content: right;
+    justify-content: space-between;
+    font-size: large;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 2vh 4vh;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4h;
+}
+.blog-post{
+    width: 20%;
+    background-color: white;
+    margin: 4vh;
+    padding: 4vh;
+    border-radius: 2vh;
+   box-shadow: 0 0 2vh rgba(0,0,0,0.1); 
+}
+.blog-post:hover{
+    box-shadow: 0 0 2vh rgba(0,0,0,0.3);
+    background-color: #f9f9f9;
+}
+.all-blogs{
+    background-color: #f9f9f9;
+    padding: 4vh;
+    margin: 4vh;
+    border-radius: 2vh;
+    box-shadow: 0 0 2vh rgba(0,0,0,0.1);
+}
+.blog-all-post{
+    margin: 4vh;
+    padding: 4vh;
+    border-radius: 2vh;
+    box-shadow: 0 0 2vh rgba(0,0,0,0.1);
+}
+.blog-all-post:hover{
+    box-shadow: 0 0 2vh rgba(0,0,0,0.3);
+    background-color: #f9f9f9;
+}
+.blog-all-post a{
+    color: black;
+    text-decoration: none;
+}
+.blog-all-post a:hover{
+    color: #333;
+}
+.blog-post a{
+    color: black;
+    text-decoration: none;
+}
+.comments{
+    padding-left: 2vh;
+}
+.comment{
+    margin-bottom: 2vh;
+    padding-bottom: 2vh;
+}
